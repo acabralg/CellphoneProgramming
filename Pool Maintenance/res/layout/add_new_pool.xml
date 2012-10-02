@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/lblContactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="53dp"
+        android:text="@string/contactname"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/tbContactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblContactName"
+        android:layout_alignBottom="@+id/lblContactName"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/lblContactName"
+        android:ems="10"
+        android:hint="@string/firstnamelastname"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblAddNewPool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tbContactName"
+        android:layout_centerHorizontal="true"
+        android:text="@string/addnewpool"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/lblContactPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tbContactName"
+        android:layout_marginTop="20dp"
+        android:text="@string/contactphone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/tbContactPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblContactPhone"
+        android:layout_alignBottom="@+id/lblContactPhone"
+        android:layout_alignLeft="@+id/tbContactName"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/lblContactEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tbContactPhone"
+        android:layout_marginTop="20dp"
+        android:text="@string/contactemail"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/tbContactEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblContactEmail"
+        android:layout_alignBottom="@+id/lblContactEmail"
+        android:layout_alignLeft="@+id/tbContactPhone"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/lblContactAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tbContactEmail"
+        android:layout_marginTop="22dp"
+        android:text="@string/address"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btnAddPool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblAddNewPool"
+        android:layout_below="@+id/lblContactAddress"
+        android:layout_marginTop="95dp"
+        android:text="@string/addnewpool" />
+
+    <EditText
+        android:id="@+id/tbContactAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnAddPool"
+        android:layout_alignTop="@+id/lblContactAddress"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+</RelativeLayout>

@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:fillViewport="true"
+      android:scrollbars="none">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:stretchColumns="0,1,2">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lblPH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ph"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/tbPH"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:inputType="number">
+
+                    <requestFocus />
+                </EditText>
+              
+                <TextView
+                    android:id="@+id/lblPpm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emptystring"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/lblFAC"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/freeavailablechlorine"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/tbFreeAvailableChlorine"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ppm"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/lblCombinedChlorine"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:text="@string/combinedchlorine"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/tbCombinedChlorine"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ppm"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/lblCalciumHardness"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calciumhardness"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/tbCalciumHardness"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ppm"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+                        <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/lblStabilizerConditioner"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stabilizerconditioner"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/tbStabilizerConditioner"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ppm"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+                <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/lblStabilizerConditionerForSalt"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stabilizerconditionerforsalt"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/tbStabilizerConditionerForSalt"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ppm"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/lblTotalDissolvedSolids"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/totaldissolvedsolids"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/tbTotalDissolvedSolids"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ppm"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/lblSalt"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/salt"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/tbSalt"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ppm"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/lblPhosphates"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phosphates"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/tbPhosphates"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ppb"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/lblAlkalinity"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alkalinity"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/tbAlkalinity"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ppm"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/lblCyanuricAcid"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cyanuricacid"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/tbCyanuricAcid"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ppm"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+
+
+
+                <TextView
+                    android:id="@+id/lblWaterTemperature"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/watertemperature"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+                <EditText
+                    android:id="@+id/tbWaterTemperature"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/degreefahrenheit"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+
+
+
+                <TextView
+                    android:id="@+id/lblPumpPressure"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pumppressure"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+                <EditText
+                    android:id="@+id/tbPumpPressure"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emptystring"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+
+
+
+                <TextView
+                    android:id="@+id/lblPowderedChlorine"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/powderedchlorine"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+                <EditText
+                    android:id="@+id/tbPowderedChlorine"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ppm"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+
+
+
+                <TextView
+                    android:id="@+id/lblLiquidChlorine"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/liquidchlorine"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+                <EditText
+                    android:id="@+id/tbLiquidChlorine"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ppm"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+            
+            <TableRow
+                android:id="@+id/tableRow16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+
+
+
+                <TextView
+                    android:id="@+id/lblNote"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/note"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+                <EditText
+                    android:id="@+id/tbNote"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:inputType="textMultiLine"/>
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emptystring"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+
+
+
+                <TextView
+                    android:id="@+id/lblDate"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+                <EditText
+                    android:id="@+id/tbDate"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:inputType="date"/>
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emptystring"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <Button
+        			android:id="@+id/btnAddLog"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_centerHorizontal="true"
+        			android:layout_centerVertical="true"
+        			android:text="@string/addlog" />
+            </TableRow>
+        </TableLayout>
+    
+	</ScrollView>
+</FrameLayout>
