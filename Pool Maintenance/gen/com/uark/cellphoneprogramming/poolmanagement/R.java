@@ -100,7 +100,7 @@ public final class R {
         public static final int activity_main=0x7f060000;
     }
     public static final class string {
-        public static final int addlog=0x7f040026;
+        public static final int addlog=0x7f040025;
         public static final int addnewpool=0x7f040005;
         public static final int address=0x7f040010;
         public static final int alkalinity=0x7f04001c;
@@ -112,7 +112,7 @@ public final class R {
         public static final int contactphone=0x7f04000e;
         public static final int cyanuricacid=0x7f04001d;
         public static final int date=0x7f040023;
-        public static final int degreefahrenheit=0x7f040025;
+        public static final int degreefahrenheit=0x7f040026;
         public static final int displaylistofpools=0x7f040006;
         public static final int emptystring=0x7f040024;
         public static final int enable_gps=0x7f040008;

@@ -10,7 +10,7 @@
     <string name="searchpool">Search Pool</string>
     <string name="enable_gps">Enable GPS</string> 
     <string name="enable_gps_dialog">GPS provider not enabled. Would you like to enable it?</string>
-	<string name="not_support_gps">GPS provider not supported</string>
+	<string name="not_support_gps">GPS provider not supported or disabled</string>
 	<string name="not_support_network">Network provider not supported</string>
 	<string name="contactname">"Contact Name: "</string>
 	<string name="firstnamelastname">Firstname Lastname</string>
@@ -37,8 +37,8 @@
 	<string name="note">Note</string>
 	<string name="date">Date</string>
 	<string name="emptystring"></string>
-	<string name="degreefahrenheit">F</string>
 	<string name="addlog">Add Log</string>
+	<string name="degreefahrenheit">F</string>
 	   
 	
 </resources>
